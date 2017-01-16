@@ -1,0 +1,74 @@
+body {
+    background-color: #ffffff;
+}
+
+
+/* Menu */
+.menu-navegacao {
+    background-color: #077358;
+}
+
+.menu-item {
+    background-color: #FF9B28;
+    padding: 0px !important;
+    margin: 1px;
+    color: #077358;
+}
+
+.menu-item:active {
+    background-color: #68FAFF;
+}
+
+.menu-item:hover {
+    color: #077358 !important;
+}
+
+/* Conteudo */
+
+b {
+    color: #077358;
+}
+
+p {
+    font-size: 1.2em;
+    color: #4F472E;
+}
+
+h1 {
+    color: #FF5828;
+    text-shadow: #FFF -1px -1px 1px;
+}
+
+h1 small {
+    color: #68FAFF;
+    font-size: .6em;
+}
+
+h2 {
+    color: #077358;
+}
+
+li {
+    color: #4F442E;
+}
+
+
+/* Secoes do site */
+
+.secao1 {
+    padding: 30px;
+    background-color: #42B9A7;
+}
+
+.secao2 {
+    padding: 20px 40px;
+    background-color: #CCB367;
+    margin-left: 0px;
+}
+
+/* Imagens Personalizadas */
+
+.sobre-img {
+    width: 100%;
+    height: 100%;
+}
