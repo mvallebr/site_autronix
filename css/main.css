@@ -1,27 +1,82 @@
+/* Planos de fundo e configuracoes gerais */
+
 body {
-    background-color: #ffffff;
+    background-image: url("../imagens/bg3.png");
+    background-attachment: fixed;
+    font-family: 'Sintony', sans-serif;;
+}
+
+.fundo-primario {
+  content: "";
+  background-color: rgba(43, 53, 33, .3);
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  position: absolute;
+  background-size: 100%;
+  z-index: -1;
+}
+
+
+.fundo-secundario {
+    margin-top: 4%;
+    margin-left: 7.5%;
+    width: 85%;
+    padding-top: 5em;
+    padding: 3em;
+    background-color: rgba(23, 33, 23, .5);
+    margin: 6% 0% 3% 7.5%;
+}
+
+
+/* Carousel slider */
+
+#myCarousel {
+    margin-top: 0;
+    margin-bottom: 5%;
+    border: 1px solid #565656;
+}
+
+
+#myCarousel h3 {
+    font-weight: bold;
+    font-size: 6em;
+    color: #00D6CE;
+    text-shadow: 2px 2px #552222;
+}
+
+#apresentacao.col-md-12 {
+    padding: 0px;
 }
 
 
 /* Menu */
+
 .menu-navegacao {
-    background-color: #077358;
+    background-color: rgba(43, 31, 31, 0.7);
+    border-bottom: 1px solid #FCFAD4;
+    padding-left: 6%;
+    padding-right: 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 4.5em;
+}
+
+#barra-navegacao, #titulo {
+    position: relative;
+    bottom: 0;
 }
 
 .menu-item {
-    background-color: #FF9B28;
     padding: 0px !important;
     margin: 1px;
-    color: #077358;
+    color: #ffffff;
 }
 
-.menu-item:active {
-    background-color: #68FAFF;
-}
-
-.menu-item:hover {
-    color: #077358 !important;
-}
 
 /* Conteudo */
 
@@ -30,22 +85,39 @@ b {
 }
 
 p {
-    font-size: 1.2em;
-    color: #4F472E;
+    color: #ffffff;
 }
 
 h1 {
-    color: #FF5828;
+    color: #00D6CE;
     text-shadow: #FFF -1px -1px 1px;
 }
 
 h1 small {
-    color: #68FAFF;
-    font-size: .6em;
+    color: #FCFAD4;
+    font-size: .5em;
+    text-transform: uppercase;
+    padding-left: 1%;
 }
 
 h2 {
     color: #077358;
+}
+
+h3 {
+    color: #00D6CE;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4%;
+    text-shadow: #552222 -1px -1px 1px;
+}
+
+h4 {
+}
+
+h5 {
+    font-size: 1.3em;
 }
 
 li {
@@ -53,22 +125,133 @@ li {
 }
 
 
-/* Secoes do site */
+/* Secoes das paginas */
 
-.secao1 {
-    padding: 30px;
-    background-color: #42B9A7;
+.formatacao-direita, .formatacao-esquerda {
+    border: 1px solid #4F472E;
+    margin-bottom: 3%;
 }
 
-.secao2 {
-    padding: 20px 40px;
-    background-color: #CCB367;
-    margin-left: 0px;
+.formatacao-direita{
+    float: right;
+    margin-right: 0%;
 }
+
+.formatacao-esquerda {
+    margin-left: 0%;
+    height: 100%;
+    padding-bottom: 2.4%;
+}
+
+.formatacao-direita:hover, .formatacao-esquerda:hover {
+    background-color: rgba(14, 14, 14, 0.3);
+}
+
+.linha-de-quadros {
+}
+
+.quadro {
+    text-align: center;
+    text-indent: 0;
+    font-size: 1em;
+    position: relative;
+    height: auto;
+    padding: 1.3%;
+}
+
+
+/* Lista secao Valores*/
+
+.lista {
+    margin-top: 4%;
+}
+
+.item-lista {
+    text-align: left;
+    opacity: 0.8;
+    margin-top: 4%;
+    background: rgba(83,70,60,0.4);
+    border: 1px solid #aaaaaa;
+}
+
+.item-lista:hover {
+    opacity: 1;
+}
+
+.item-lista h5 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+/* Configuracao para background transparente */
+
+
+#missao::after {
+  content: "";
+  background: url("../imagens/missao.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+#missao {
+    opacity: 1; /* Ajusta a opacidade do texto */
+    font-size: 1.2em;
+}
+
+
+#visao::after {
+  content: "";
+  background: url("../imagens/visao.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+#visao {
+    opacity: 1; /* Ajusta a opacidade do texto */
+    margin-bottom:
+}
+
+#valores::after {
+  content: "";
+  background: url("../imagens/valores.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+#valores {
+    opacity: 1; /* Ajusta a opacidade do texto */
+}
+
 
 /* Imagens Personalizadas */
 
 .sobre-img {
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: 100%;
 }
+
