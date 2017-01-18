@@ -66,7 +66,18 @@ body {
     height: 4.5em;
 }
 
-#barra-navegacao, #titulo {
+#barra-navegacao-container {
+  position: relative; 
+  height: 100%;
+}
+
+#barra-navegacao {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#titulo {
     position: relative;
     bottom: 0;
 }
