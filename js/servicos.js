@@ -16,6 +16,13 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
 	$('.image-link').magnificPopup({type:'image'});
-	$("#accordion").accordion();
+
+
+	$("#accordion").accordion({
+	    collapsible: true,
+	    heightStyle: "content"
+	});
 });
