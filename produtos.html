@@ -36,7 +36,7 @@
             </div>
 
             <!-- Menu -->
-            <div class="col-md-6">
+            <div class="col-md-6" id="barra-navegacao-container">
                 <div id="barra-navegacao">
                     <ul class="nav nav-tabs navbar-right">
                         <li class="menu-item"><a class="item" href="index.html">Sobre</a></li>
@@ -52,7 +52,32 @@
 
 
     <div class="container fundo-secundario">
-        <p>Lorem ipsum</p>
+        <h2>Produtos</h2>
+        <div class="row formatacao-esquerda quadro" id="produtos">
+            <div class="col-md-5" id="conversor-info">
+                <h3>Conversor ATX-05/24</h3>
+                <p>Um módulo conversor microprocessado com as seguintes características principais:</p>
+                <ul>
+                    <li class="list-group-item item-lista">Alimentação de 24 Vcc</li>
+                    <li class="list-group-item item-lista">Fonte de alimentação externa de 5 Vcc/300 mA para alimentação
+                        de régua linear, encoder, simulador de encoder de servoconversores, etc.
+                    </li>
+                    <li class="list-group-item item-lista">Filtragem digital de ruídos de modo comum</li>
+                    <li class="list-group-item item-lista">Entradas para 6 sinais (A, B, ZERO e seus complementos)</li>
+                    <li class="list-group-item item-lista">Não é necessário usar todos os sinais mas o complemento
+                        (sinal invertido) do sinal utilizado é obrigatório
+                    </li>
+                    <li class="list-group-item item-lista">Seis sinais de saída 24 Vcc (A, B, ZERO e seus
+                        complementos)
+                    </li>
+                    <li class="list-group-item item-lista">Freqüência máxima dos sinais 30 KHz</li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <img id="zoom_mw" class="img-responsive formatacao-direita" src="imagens/conversor.jpeg"
+                     data-zoom-image="imagens/conversor.jpeg">
+            </div>
+        </div>
     </div>
 </div>
 
@@ -60,7 +85,8 @@
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript"
         src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+<script type="text/javascript" src="js/produtos.js"></script>
 
 </body>
 </html>

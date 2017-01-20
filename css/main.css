@@ -24,7 +24,7 @@ body {
     margin-left: 7.5%;
     width: 85%;
     padding-top: 5em;
-    padding: 3em;
+    padding: 5em;
     background-color: rgba(23, 33, 23, .5);
     margin: 6% 0% 3% 7.5%;
 }
@@ -66,15 +66,52 @@ body {
     height: 4.5em;
 }
 
-#barra-navegacao, #titulo {
-    position: relative;
-    bottom: 0;
+#barra-navegacao-container {
+  position: relative;
+  height: 100%;
+}
+
+#barra-navegacao {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+}
+
+ #titulo {
+  position: relative;
+  bottom: 0;
 }
 
 .menu-item {
     padding: 0px !important;
     margin: 1px;
+    background-color: none !important;
     color: #ffffff;
+}
+
+.nav-tabs>li.active>a {
+    background-color: rgba(0, 214, 216, 0.5);
+    border-radius: 0px !important;
+    color: #ffffff;
+}
+
+.nav-tabs>li.active>a:hover {
+    background-color: rgba(0, 214, 216, 0.3);
+    border-radius: 0px !important;
+    color: #ffffff;
+}
+
+.nav-tabs>li>a:hover {
+    background-color: rgba(0, 214, 216, 0.2);
+    border-radius: 0px !important;
+    color: #ffffff;
+}
+
+.item {
+    background-color: rgba(35, 35, 35, 0.8);
+    border-radius: 0px !important;
+    color: #00D6CE;
 }
 
 
@@ -101,23 +138,46 @@ h1 small {
 }
 
 h2 {
-    color: #077358;
+    color: #00D6CE;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: #552222 -2px -2px 2px;
+    padding-bottom: 1em;
+
 }
 
 h3 {
+    font-weight: bold;
     color: #00D6CE;
     font-size: 1.8em;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 4%;
+    padding-bottom: .35em;
     text-shadow: #552222 -1px -1px 1px;
 }
 
 h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #00D6CE;
+    font-size: 1.5em;
+    text-shadow: #552222 -1px -1px 1px;
 }
 
 h5 {
     font-size: 1.3em;
+}
+
+h6 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    color: #cccccc;
+    font-size: 1.1em;
+    text-shadow: #552222 -1px -1px 1px;
 }
 
 li {
@@ -129,7 +189,7 @@ li {
 
 .formatacao-direita, .formatacao-esquerda {
     border: 1px solid #4F472E;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
 }
 
 .formatacao-direita{
@@ -147,9 +207,6 @@ li {
     background-color: rgba(14, 14, 14, 0.3);
 }
 
-.linha-de-quadros {
-}
-
 .quadro {
     text-align: center;
     text-indent: 0;
@@ -158,7 +215,6 @@ li {
     height: auto;
     padding: 1.3%;
 }
-
 
 /* Lista secao Valores*/
 
@@ -245,6 +301,59 @@ li {
     opacity: 1; /* Ajusta a opacidade do texto */
 }
 
+/* Pagina Produtos */
+
+#produtos {
+    text-align: center;
+    padding: 4%;
+    background-color: rgba(40, 31, 31, 0.6);
+}
+
+#produtos ul {
+    padding: .6em 0 0 0;
+}
+
+#produtos li {
+    text-indent: 0;
+    color: #ffffff;
+    margin: 0px;
+}
+
+#produtos quadro {
+    position: absolute;
+    height: 100%;
+}
+
+#produtos img {
+    margin-top: 1.5em;
+}
+
+#conversor-info {
+    font-size: .96em;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+/* Pagina Contato */
+
+#contato p {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contato a {
+    text-decoration: none;
+    color: #00D6CE;
+    font-weight: bold;
+}
+
+#texto-contato {
+    padding-top: 12%;
+    padding-bottom: 15.8%;
+    background-color: rgba(40, 31, 31, 0.6);
+}
 
 /* Imagens Personalizadas */
 
