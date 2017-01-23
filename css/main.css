@@ -118,9 +118,11 @@ p {
     color: #ffffff;
 }
 
-h1 {
+h1, h1 a, h1 a:hover, h1 strong, h1 a:focus {
+    font-weight: 900;
     color: #00D6CE;
     text-shadow: #FFF -1px -1px 1px;
+    text-decoration: none;
 }
 
 h1 small {
@@ -373,30 +375,6 @@ li {
     right: 0;
 }
 
-/* Pagina Contato */
-
-#contato p {
-    font-size: 1em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#contato a {
-    text-decoration: none;
-    color: #00D6CE;
-    font-weight: bold;
-}
-
-#texto-contato {
-    padding-top: 12%;
-    padding-bottom: 15.8%;
-    background-color: rgba(40, 31, 31, 0.6);
-}
-
-#mapa {
-   border: 1px solid #4F472E;
-}
-
 
 /* Pagina Servicos */
 
@@ -412,18 +390,6 @@ li {
     text-align: left;
     font-size: 1em;
 }
-
-.popup-gallery {
-    margin-top: 2em;
-}
-
-.popup-gallery img {
-    padding: 0;
-    margin: 0.3em;
-    margin-bottom: 0.6em;
-    border: 1px solid #ababab !important;
-}
-
 
 #servicos strong {
     color: #00D6CE;
@@ -481,5 +447,41 @@ li {
 #servicos #accordion li {
     margin-left: 1.5em;
     color: #ffffff;
+}
+
+#galeria img {
+    padding: 0;
+    margin: 0.3em;
+    margin-bottom: 0.6em;
+    border: 1px solid #ababab !important;
+}
+
+
+#galeria h4 {
+    margin-bottom: 1em;
+}
+
+/* Pagina Contato */
+
+#contato p {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contato a {
+    text-decoration: none;
+    color: #00D6CE;
+    font-weight: bold;
+}
+
+#texto-contato {
+    padding-top: 12%;
+    padding-bottom: 15.8%;
+    background-color: rgba(40, 31, 31, 0.6);
+}
+
+#mapa {
+   border: 1px solid #4F472E;
 }
 
